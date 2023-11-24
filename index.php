@@ -1,11 +1,17 @@
 <?php
 include 'Animal.php';
+include 'Dog.php';
+include 'Giraffe.php';
+include 'Car.php';
 
 $animals = [
-    new Animal("Giraffe", "Fred", 4),
-    new Animal("Dog", "Rufus", 6)
+    new Giraffe("Fred", 4),
+    new Dog("Rufus", 6)
 ];
 
-foreach ($animals as $animal) {
-    echo $animal->name." the ".$animal->type." is ".$animal->age." years old!<br>";
-}
+$myCar1 = new Car("Volvo", 1936);
+$myCar2 = new Car("BMW", 568);
+
+$myCar2->increaseMileage(240);
+
+
