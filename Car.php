@@ -2,6 +2,7 @@
 class Car {
     public $brand;
     private $mileage;
+    static $describe = "A car, or an automobile, is a motor vehicle with wheels.";
 
     public function __construct($brand, $mileage) {
         $this->brand = $brand;
@@ -14,5 +15,9 @@ class Car {
 
     public function increaseMileage($amount) {
         $this->mileage += $amount;
+    }
+
+    static function makeNoise() {
+        echo "Beep, Beep!";
     }
 }

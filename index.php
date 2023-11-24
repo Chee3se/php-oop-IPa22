@@ -14,4 +14,6 @@ $myCar2 = new Car("BMW", 568);
 
 $myCar2->increaseMileage(240);
 
+Car::makeNoise();
+
 
