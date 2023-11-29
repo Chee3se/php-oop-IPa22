@@ -7,6 +7,6 @@ class Giraffe extends Animal {
         $this->age = $age;
     }
     public function necc() {
-        echo "necc!";
+        echo "necc!<br>";
     }
 }

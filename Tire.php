@@ -11,6 +11,6 @@ class Tire {
     }
 
     public function __destruct() {
-        echo "Boom!";
+        echo "Boom!<br>";
     }
 }

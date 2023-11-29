@@ -7,6 +7,6 @@ class Dog extends Animal {
         $this->age = $age;
     }
     public function bark() {
-        echo "woof!";
+        echo "woof!<br>";
     }
 }

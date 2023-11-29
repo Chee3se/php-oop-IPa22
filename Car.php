@@ -10,7 +10,7 @@ class Car {
     }
 
     public function __destruct() {
-        echo $this->brand." is dead at mileage ".$this->mileage;
+        echo $this->brand." is dead at mileage ".$this->mileage."<br>";
     }
 
     public function increaseMileage($amount) {
@@ -18,6 +18,6 @@ class Car {
     }
 
     static function makeNoise() {
-        echo "Beep, Beep!";
+        echo "Beep, Beep!<br>";
     }
 }

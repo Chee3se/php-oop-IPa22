@@ -11,7 +11,7 @@ class Train {
     }
 
     public function __destruct() {
-        echo $this->brand." is dead at mileage ".$this->mileage;
+        echo $this->brand." is dead at mileage ".$this->mileage."<br>";
     }
 
     public function increaseMileage($amount) {
@@ -19,6 +19,6 @@ class Train {
     }
 
     static function makeNoise() {
-        echo "Choo, Choo!";
+        echo "Choo, Choo!<br>";
     }
 }
