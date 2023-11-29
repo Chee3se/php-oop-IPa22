@@ -27,7 +27,7 @@ Train::makeNoise();
 
 $myTire1 = new Tire("Goodyear", "Winter", 69);
 
-$myTire1->brand = "nvm";
-$myTire1->type = "Summer";
+echo $myTire1->brand."<br>";
+echo $myTire1->type."<br>";
 
 
