@@ -1,4 +1,7 @@
 <?php
+
+//Including
+
 include 'Animal.php';
 include 'Dog.php';
 include 'Giraffe.php';
