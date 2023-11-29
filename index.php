@@ -25,9 +25,9 @@ $myTrain1->increaseMileage(240);
 
 Train::makeNoise();
 
-$myTire1 = new Tire("Goodyear", "Winter", 69);
+$myTire1 = new Tire(30, "Winter", 69);
 
-echo $myTire1->brand."<br>";
+echo $myTire1->size."<br>";
 echo $myTire1->type."<br>";
 
 
