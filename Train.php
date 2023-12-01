@@ -1,21 +1,11 @@
 <?php
-class Train {
-    public $brand;
+include_once 'Vehicle.php';
+class Train extends Vehicle {
     public $trackGauge;
-    private $mileage;
 
     public function __construct($brand, $trackGauge, $mileage) {
-        $this->brand = $brand;
+        parent::__construct($brand, $mileage);
         $this->trackGauge = $trackGauge;
-        $this->mileage = $mileage;
-    }
-
-    public function __destruct() {
-        echo $this->brand." is dead at mileage ".$this->mileage."<br>";
-    }
-
-    public function increaseMileage($amount) {
-        $this->mileage += $amount;
     }
 
     static function makeNoise() {

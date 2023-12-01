@@ -1,12 +1,9 @@
 <?php
+include_once 'Animal.php';
 class Giraffe extends Animal {
     public $type = "Giraffe";
 
-    public function __construct($name, $age) {
-        $this->name = $name;
-        $this->age = $age;
-    }
-    public function necc() {
+    static function woof() {
         echo "necc!<br>";
     }
 }

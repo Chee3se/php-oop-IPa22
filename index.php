@@ -2,8 +2,8 @@
 
 //Including
 
-include 'Animal.php';
 include 'Dog.php';
+include 'Cat.php';
 include 'Giraffe.php';
 include 'Car.php';
 include 'Train.php';
@@ -13,7 +13,15 @@ include 'Tire.php';
 
 $animals = [
     new Giraffe("Fred", 4),
-    new Dog("Rufus", 6)
+    new Dog("Reksis", 6)
+];
+$animals[1]->woof();
+
+//Kitties
+
+$kitties = [
+    new Cat("Minis", 2),
+    new Cat("Brincis", 3)
 ];
 
 //Car
