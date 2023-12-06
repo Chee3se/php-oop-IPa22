@@ -8,6 +8,7 @@ include 'Giraffe.php';
 include 'Car.php';
 include 'Train.php';
 include 'Tire.php';
+include 'Math.php';
 
 //Animals
 
@@ -25,6 +26,7 @@ $kitties = [
 ];
 
 //Car
+
 
 $myCar1 = new Car("Volvo", 1936);
 $myCar2 = new Car("BMW", 568);
@@ -48,5 +50,20 @@ $myTire1 = new Tire(30, "Winter", 69);
 
 echo $myTire1->size."<br>";
 echo $myTire1->type."<br>";
+
+//Math
+
+$arr = [5, 10, 15];
+echo Math::addTwo(1, 2)."<br>";
+//res = 3
+echo Math::factorial(3)."<br>";
+//fac = 6
+echo Math::sum($arr)."<br>";
+//sum = 30
+echo Math::average($arr)."<br>";
+//avg = 10
+echo Math::max($arr)."<br>";
+//max = 15
+
 
 
